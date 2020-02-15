@@ -1,0 +1,9 @@
+.products-overview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.products-overview > div {
+    margin-bottom: 2rem;
+}
