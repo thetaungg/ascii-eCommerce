@@ -10,10 +10,6 @@ html {
     box-sizing: border-box;
 }
 
-.app {
-    height: 100%;
-}
-
 .header {
     display: flex;
     flex-direction: column;

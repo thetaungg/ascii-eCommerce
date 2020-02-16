@@ -9,9 +9,9 @@ class App extends React.Component{
     constructor() {
         super();
         this.state = {
-            products: [],
+            products: [], //this will store arrays of items; each arrays contain 20 items //
             ads: [],
-            standbyProducts: [],
+            standbyProducts: [], //this is to store all fetched items and pour them into products array as the user scrolls
             reachedBottom: false
         }
     }

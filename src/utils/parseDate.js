@@ -24,7 +24,7 @@ const parseDate = (dataInString) => {
     if(elapsed === msPerWeek) {
         return 'a week ago'
     }
-    return `${date.getDate()}/${date.getMonth()+1}/${date.getUTCFullYear()}` //because month starts from 0
+    return `${date.getDate()}/${date.getMonth() +  1}/${date.getUTCFullYear()}` //because month starts from 0
 };
 
 export default parseDate;
