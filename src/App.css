@@ -10,6 +10,10 @@ html {
     box-sizing: border-box;
 }
 
+.app {
+    height: 100%;
+}
+
 .header {
     display: flex;
     flex-direction: column;
@@ -34,7 +38,19 @@ html {
     padding: .2rem .5rem;
 }
 
-.end {
+.main-content__loading {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.main-content__fetching {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-content__end {
     text-align: center;
     margin-top: 20px;
 }
