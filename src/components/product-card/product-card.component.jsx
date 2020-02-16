@@ -11,14 +11,14 @@ const ProductCard = ({product}) => (
         <div className="product__details">
             <div className="product__SnP">
                 <span className="product__size">
-                    {product.size}px
+                    Size: {product.size}px
                 </span>
                 <span className="product__price">
-                    ${product.price/100}
+                    Price: ${product.price/100}
                 </span>
             </div>
             <span className="product__added-date">
-                Added {parseDate(product.date)}
+                Added: {parseDate(product.date)}
             </span>
         </div>
     </div>

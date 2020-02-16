@@ -25,6 +25,7 @@ const generateRandomButUniqueImages = async () => {
     const urlArr = await Promise.all(randomNum.map(num => grabContent(`/ads/?r=${num}`)));
 
     //console.log(storeUniqueImages(urlArr))
-    return [...storeUniqueImages(urlArr), ...storeUniqueImages(urlArr), ...storeUniqueImages(urlArr)] //storeUniqueImage will only return a total of 10 images because there's only 10 unique images we can query using this url //trust me I tried //and we need nearly 30 ads
+    const uniqueImages = storeUniqueImages(urlArr);
+    return [...uniqueImages, ...uniqueImages,...uniqueImages] //storeUniqueImage will only return a total of 10 images because there's only 10 unique images we can query using this url //trust me I tried //and we need nearly 30 ads
 };
 export default generateRandomButUniqueImages;

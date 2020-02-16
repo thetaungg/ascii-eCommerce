@@ -40,15 +40,7 @@ class App extends React.Component{
             .catch(error => console.log(error));
 
         window.addEventListener('scroll', this.handleScroll);
-
-        if (this.state.products.length === 25) {
-            this.setState({reachedBottom: true})
-        }else{
-            this.setState({reachedBottom: false})
-        }
-
     }
-
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll)
@@ -68,6 +60,12 @@ class App extends React.Component{
                 products: [...prevState.products, prevState.standbyProducts[1]],
                 standbyProducts: prevState.standbyProducts.filter((value, index) => index !== 1 )
             }));
+        }
+
+        if (this.state.products.length === 25) {
+            this.setState({reachedBottom: true})
+        }else{
+            this.setState({reachedBottom: false})
         }
     };
 
@@ -92,7 +90,7 @@ class App extends React.Component{
             <div className='app'>
                 <header className='header'>
                     <h1>
-                        Product Grid
+                        Ascii Faces
                     </h1>
                     <p>Here you're sure to find a bargain on some of the finest ascii available to purchase. Be sure to
                         peruse our selection of ascii faces in an exciting range of sizes and prices.</p>
